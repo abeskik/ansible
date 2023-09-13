@@ -1,0 +1,12 @@
+---
+# tasks file for create_user
+- name: "nginx installation"
+  apt:
+    name: "nginx"
+    state: "latest"
+
+- name: "nginx service activation"
+  service:
+  name : "nginx"
+  state: "started"
+  enable: yes
